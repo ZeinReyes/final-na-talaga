@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Alex+Brush&family=Poppins:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Alex+Brush&family=Poppins:ital,wght@0,300;1,400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #191919;
+    position: relative;
+    z-index: 2;
+}
+
+.navbar {
+    width: auto;
+    height: 80px;
+}
+
+.nav-item a {
+    margin: 10px 20px;
+    font-size: 17px;
+    color: #202020;
+}
+
+.nav-item {
+    z-index: 1;
+}
+
+main {
+    background-color: #202020;
+}
+
+.home-container {
+    scroll-snap-type: y mandatory;
+}
+
+.container1, .container2, .container3 {
+    scroll-snap-align: start;
+}
+
+.container1 {
+    width: 100%;
+    height: 100vh;
+    background-color: #202020;
+    background-image: url(https://4kwallpapers.com/images/wallpapers/wooden-background-wooden-planks-5k-1440x900-2304.jpg);
+    overflow: hidden;
+    border-radius: 0 0 50px 50px;
+    background-attachment: fixed;
+}
+
+#container1-text {
+    width: 60%;
+    color: #ffeba0;
+    position: relative;
+    top: 170px;
+    margin: 0 0 0 100px;
+    animation: slideInLeft 1s ease-in;
+}
+
+#container1-text button {
+    padding: 5px 20px;
+    background-color: red;
+    color: #f2f2f2;
+    border-radius: 7px;
+    border: none;
+}
+
+#container1-text h1 {
+    font-size: 50px;
+}
+
+#container1-text p {
+    color: #f2f2f2;
+    font-weight: 100;
+}
+
+#container1-image {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    animation: slideInRight 1s ease-in;
+}
+
+#container1-image img {
+    position: relative;
+    width: 100%;
+    right: -120px;
+    height: 100vh;
+    transform: scaleX(-1);
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.container2 {
+    width: 100%;
+    height: 100vh;
+    background-color: #202020;
+}
+
+.carousel-item svg {
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+    height: 100%;
+    top: 135px;
+    fill: #ffeba0;
+}
+
+.carousel-inner h1 {
+    color: #ffeba0;
+    position: relative;
+    top: 30px;
+    text-align: center;
+    font-family: cursive;
+}
+
+.pizza {
+    position: relative;
+    top: -25px;
+    left: 50px;
+    z-index: 1;
+}
+
+.pizza-name {
+    position: relative;
+    top: 150px;
+    left: 100px;
+    line-height: 1;
+}
+
+.pizza-name p {
+    color: #ffeba0;
+    font-size: 80px;
+    text-transform: uppercase;
+}
+
+.add-cart span {
+    color: #ffeba0;
+}
+
+.add-cart button {
+    text-transform: capitalize;
+    background-color: #ffeba0;
+    color: #202020;
+    border: none;
+}
+
+.description {
+    color: #ffeba0;
+    position: relative;
+    top: 300px;
+}
+
+.description h5 {
+    font-size: 70px;
+    text-transform: capitalize;
+}   
+
+.container3 {
+    width: 100%;
+    height: 100vh;
+    background-color: #ffeba0;
+    margin: -50px auto;
+}
+
+.header-dining {
+    position: absolute;
+    color: #202020;
+    font-size: 100px;
+    font-family: cursive;
+    margin: 20px auto ;
+}
+
+.dine-in {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.dine-in, .deliver, .pick-up {
+    width: 25rem;
+    height: 400px;
+    background-color: #8c2617;
+    color: #f2f2f2;
+    text-align: center;
+    margin: 230px auto;
+    box-shadow: 10px 10px #202020;
+    border: 5px solid #202020;
+    transition: .3s linear;
+}
+
+.dine-in h1, .deliver h1, .pick-up h1 {
+    font-family: alex brush;
+}
+
+.dine-in p, .deliver p, .pick-up p {
+    font-family: poppins;
+}
+
+.dine-in svg, .deliver svg, .pick-up svg {
+    width: 50px;
+    height: 50px;
+    fill: #f2f2f2;
+}
+
+footer {
+    width: 100%;
+    height: 45vh;
+    background-color: #202020;
+}
+
+footer h1 {
+    font-size: 60px;
+    color: #ffeba0;
+    margin: 30px 0 0;
+}
+
+footer svg {
+    fill: #ffeba0;
+    width: 15px;
+    height: 25px;
+}
+
+footer p {
+    color: #ffeba0;
+}
