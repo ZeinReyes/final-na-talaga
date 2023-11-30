@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Alex+Brush&family=Poppins:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Alex+Brush&family=Poppins:ital,wght@0,300;1,400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #191919;
+    position: relative;
+    z-index: 2;
+}
+
+.navbar {
+    width: auto;
+    height: 80px;
+}
+
+.nav-item a {
+    margin: 10px 20px;
+    font-size: 17px;
+    color: #202020;
+}
+
+.nav-item {
+    z-index: 1;
+}
+
+.container1 {
+    width: 100%;
+    height: 90vh;
+    background-image: url(https://images.unsplash.com/photo-1578662996442-48f60103fc96?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmxhY2tib2FyZHxlbnwwfHwwfHx8MA%3D%3D);
+}
+
+.container1 img {
+    transform: scaleX(-1);
+    position: relative;
+    left: -100px;
+    animation: pop 1s ease;
+}
+
+@keyframes pop {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.main-box {
+    position: relative;
+    top: 40px;
+    left: -100px;
+    animation: slideInRight 1s ease;
+}
+
+.box1 {
+    width: 100%;
+    height: 30vh;
+    background-color: #191919;
+    text-align: center;
+    border-radius: 20px 20px 0 0;
+}
+
+.box1 h1 {
+    color: #f2f2f2;
+    font-weight: 600;
+    position: relative;
+    top: 20px;
+}
+
+.box1 p {
+    color: #f2f2f2;
+    position: relative;
+    top: 35px;
+    font-weight: 400;
+}
+
+.box1 span {
+    color: #f2f2f2;
+    position: relative;
+    top: 45px;
+    font-weight: 100;
+}
+
+.box2 {
+    background-color: #202020;
+    height: 50vh;
+    width: 100%;
+    border-radius: 0 0 20px 20px;
+}
+
+form h1 {
+    color: #f2f2f2;
+    text-align: center;
+    position: relative;
+    top: 10px;
+}
+
+form .user-box {
+    position: relative;
+    top: 20px;
+    left: 13%;
+}
+  
+  form .user-box input {
+    width: 70%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+  
+  form .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  form .user-box input:focus ~ label,
+  form .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #bdb8b8;
+    font-size: 12px;
+  }
+
+.form-btn {
+    color: #f2f2f2;
+    background-color: transparent;
+    padding: 10px 30px;
+    border: 1px solid #f2f2f2;
+    margin: 30px auto;
+    transition: .7s ease;
+}
+
+.form-btn:hover {
+    background-color: #ffeba0;
+    color: #191919;
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+footer {
+    width: 100%;
+    height: 45vh;
+    background-color: #202020;
+}
+
+footer h1 {
+    font-size: 60px;
+    color: #ffeba0;
+    margin: 30px 0 0;
+}
+
+footer svg {
+    fill: #f2f2f2;
+    width: 15px;
+    height: 25px;
+}
+
+footer p {
+    color: #f2f2f2;
+}
