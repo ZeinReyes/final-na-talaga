@@ -38,6 +38,68 @@ header {
     z-index: 1;
 }
 
+.menu-container {
+  height: fit-content;
+  width: 100%;
+}
+
+.pizza-menu {
+  width: 80%;
+  height: fit-content;
+  background-color: #202020;
+  margin: 50px auto;
+}
+
+.pizza-menu h1 {
+  color: #f2f2f2;
+  font-size: 70px;
+  padding: 10px 20px;
+}
+
+.card-container {
+  width: 90%;
+  height: fit-content;
+}
+
+.pasta-menu {
+  width: 80%;
+  height: fit-content;
+  background-color: #ffbf00;
+  margin: 50px auto;
+}
+
+.pasta-menu h1 {
+  color: #f2f2f2;
+  font-size: 70px;
+  padding: 10px 20px;
+}
+
+.sides-menu {
+  width: 80%;
+  height: fit-content;
+  background-color: #ffeb08;
+  margin: 50px auto;
+}
+
+.sides-menu h1 {
+  color: #f2f2f2;
+  font-size: 70px;
+  padding: 10px 20px;
+}
+
+.drinks-menu {
+  width: 80%;
+  height: fit-content;
+  background-color: #191919;
+  margin: 50px auto;
+}
+
+.drinks-menu h1 {
+  color: #f2f2f2;
+  font-size: 70px;
+  padding: 10px 20px;
+}
+
 footer {
   width: 100%;
   height: 45vh;
@@ -58,18 +120,4 @@ footer svg {
 
 footer p {
   color: #f2f2f2;
-}
-
-
-.pizza-menu {
-  height: 100vh;
-  width: 100w;
-}
-
-.card {
-  margin: 50px 10px;
-}
-
-.card img{
-  height: 200px;
 }
