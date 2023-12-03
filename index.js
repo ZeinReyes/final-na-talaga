@@ -17,7 +17,6 @@ window.addEventListener('scroll', () => {
 
 const cards = document.querySelectorAll('.dine-in, .deliver, .pick-up');
 
-
 function handleIntersection(entries, observer) {
     entries.forEach((entry, index) => {
         if (entry.isIntersecting) {
@@ -35,7 +34,7 @@ function handleIntersection(entries, observer) {
 const observer = new IntersectionObserver(handleIntersection, {
     root: null,
     rootMargin: '0px',
-    threshold: 0.2,
+    threshold: 0.4,
 });
 
 cards.forEach(card => {
