@@ -7,7 +7,6 @@ let description = document.querySelectorAll(".text");
 let rotationValues = [-65, 0, 65];
 
 const images = ["best1", "best2", "best3"];
-
 let itemIndex = 1;
 
 
@@ -19,9 +18,7 @@ function rotate(rotationValue) {
 
 menuItems.forEach((menuItem, i) => {
     menuItem.addEventListener("click", () => {
-        const imagePath = "images/" + images[i] + ".png";
-        console.log("Image path:", imagePath);
-
+        const imagePath = "../final-na-talaga/css/images/" + images[i] + ".png";
         // Set background image directly on the .img element
         image.style.backgroundImage = `url(${imagePath})`;
 
